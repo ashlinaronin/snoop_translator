@@ -22,13 +22,13 @@
         {
             //Arrange
             $test_SnoopTranslator = new SnoopTranslator;
-            $input = "boys in the cupboards";
+            $input = "boys in cupboards";
 
             //Act
             $result = $test_SnoopTranslator->snoopTranslate($input);
 
             //Assert
-            $this->assertEquals("boyz in the cupboardz", $result);
+            $this->assertEquals("boyz in cupboardz", $result);
 
         }
 
@@ -55,7 +55,7 @@
             $result = $test_SnoopTranslator->snoopTranslate($input);
 
             //Assert
-            $this->assertEquals("tha", $result); 
+            $this->assertEquals("tha", $result);
         }
 
     }

@@ -10,30 +10,37 @@ class SnoopTranslator
 
         foreach ($array_of_words as $word) {
             $output_word = "";
-            $first_letter = substr($word, 0);
+            //if we find the word "the"
+            //we will use "tha" for the outputword
+            //else we will loop through the rest of the logic
+            if ($word == "the") {
+                $output_word = "tha";
+            } else {
 
-            $array_of_letters = str_split($word);
-            $count = 0;
-            foreach ($array_of_letters as $letter) {
-                $output_letter = "";
+                $first_letter = substr($word, 0);
 
-                /* If first letter is s, ignore it.
-                   If s occurs anywhere else in the word, change it to z.
-                   Leave all other letters alone. */
-                if ($letter == "s") {
-                    if ($count == 0) {
-                        $output_letter = $letter;
+                $array_of_letters = str_split($word);
+                $count = 0;
+                foreach ($array_of_letters as $letter) {
+                    $output_letter = "";
+
+                    /* If first letter is s, ignore it.
+                       If s occurs anywhere else in the word, change it to z.
+                       Leave all other letters alone. */
+                    if ($letter == "s") {
+                        if ($count == 0) {
+                            $output_letter = $letter;
+                        } else {
+                            $output_letter = "z";
+                        }
                     } else {
-                        $output_letter = "z";
+                        $output_letter = $letter;
                     }
-                } else {
-                    $output_letter = $letter;
+
+                    $output_word .= $output_letter;
+                    $count++;
                 }
-
-                $output_word .= $output_letter;
-                $count++;
             }
-
             array_push($output, $output_word);
         }
 
