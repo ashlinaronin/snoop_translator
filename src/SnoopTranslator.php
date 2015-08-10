@@ -5,24 +5,21 @@ class SnoopTranslator
 
     function shizzlenate($input_phrase)
     {
+        include "snoopdictionary.php";
+
         $array_of_words = explode(" ", $input_phrase);
         $output = array();
 
         foreach ($array_of_words as $word) {
+
             $output_word = "";
 
             $last_three_letters = substr($word, -3);
             //if we find the word "the"
             //we will use "tha" for the outputword
             //else we will loop through the rest of the logic
-            if ($word == "the") {
-                $output_word = "tha";
-            } elseif ($word == "for") {
-                $output_word = "fo'";
-            } elseif ($word == "sure") {
-                $output_word = "shizzle";
-            } elseif ($word == "my") {
-                $output_word = "ma'";
+            if (array_key_exists($word, $snoopdictionary)) {
+                $output_word = $snoopdictionary[$word];
             } elseif ($last_three_letters == "ing") {
                 // delete "g" and replace with "'"
                 $output_word = substr($word, 0, -1) . "'";
