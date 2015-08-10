@@ -10,6 +10,8 @@ class SnoopTranslator
 
         foreach ($array_of_words as $word) {
             $output_word = "";
+
+            $last_three_letters = substr($word, -3);
             //if we find the word "the"
             //we will use "tha" for the outputword
             //else we will loop through the rest of the logic
@@ -18,9 +20,12 @@ class SnoopTranslator
             }  elseif ($word == "for") {
                 $output_word = "fo'";
             }  elseif ($word == "sure") {
-                $output_word = "shizzle"; 
-            }
-                else {
+                $output_word = "shizzle";
+            } elseif ($last_three_letters == "ing") {
+                // delete "g" and replace with "'"
+                $output_word = substr($word, 0, -1) . "'";
+            } else {
+
 
                 $first_letter = substr($word, 0);
 
