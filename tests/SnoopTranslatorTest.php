@@ -44,7 +44,19 @@
             //Assert
             $this->assertEquals("silhouette", $result);
         }
-        
+
+        function test_snoopTranslate_theToTha()
+        {
+            //Arrange
+            $test_SnoopTranslator = new SnoopTranslator;
+            $input = "the";
+
+            //Act
+            $result = $test_SnoopTranslator->snoopTranslate($input);
+
+            //Assert
+            $this->assertEquals("tha", $result); 
+        }
 
     }
 
