@@ -15,7 +15,10 @@ class SnoopTranslator
             //else we will loop through the rest of the logic
             if ($word == "the") {
                 $output_word = "tha";
-            } else {
+            }  elseif ($word == "for") {
+                $output_word = "fo'"; 
+            }
+                else {
 
                 $first_letter = substr($word, 0);
 

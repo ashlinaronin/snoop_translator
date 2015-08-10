@@ -58,6 +58,18 @@
             $this->assertEquals("tha", $result);
         }
 
+        function test_snoopTranslate_forToFo()
+        {
+            //Arrange
+            $test_SnoopTranslator = new SnoopTranslator;
+            $input = "for";
+
+            //Act
+            $result = $test_SnoopTranslator->snoopTranslate($input);
+
+            //Assert
+            $this->assertEquals("fo'", $result); 
+        }
     }
 
 ?>
