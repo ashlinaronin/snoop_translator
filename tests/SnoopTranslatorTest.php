@@ -70,6 +70,7 @@
             //Assert
             $this->assertEquals("fo'", $result);
         }
+
         function test_snoopTranslate_sureToShizzle()
         {
             //Arrange
@@ -80,7 +81,20 @@
             $result = $test_SnoopTranslator->snoopTranslate($input);
 
             //Assert
-            $this->assertEquals("shizzle", $result); 
+            $this->assertEquals("shizzle", $result);
+        }
+
+        function test_snoopTranslate_ingToIn()
+        {
+            //Arrange
+            $test_SnoopTranslator = new SnoopTranslator;
+            $input = "popping";
+
+            //Act
+            $result = $test_SnoopTranslator->snoopTranslate($input);
+
+            //Assert
+            $this->assertEquals("poppin'", $result);
         }
     }
 
