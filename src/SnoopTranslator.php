@@ -15,9 +15,8 @@ class SnoopTranslator
             $output_word = "";
 
             $last_three_letters = substr($word, -3);
-            //if we find the word "the"
-            //we will use "tha" for the outputword
-            //else we will loop through the rest of the logic
+            //check the dictionary array for a particular word
+            //if the key is there, return the value
             if (array_key_exists($word, $snoopdictionary)) {
                 $output_word = $snoopdictionary[$word];
             } elseif ($last_three_letters == "ing") {

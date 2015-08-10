@@ -7,7 +7,10 @@
         "my" => "ma'",
         "you" => "u",
         "hey" => "ay",
-        "hello" => "yo"
+        "hello" => "yo",
+        "friend" => "mothafucka",
+        "light" => "spark",
+        "cigar" => "bleezy"
     );
 
 ?>
