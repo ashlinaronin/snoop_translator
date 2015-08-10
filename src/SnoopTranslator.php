@@ -3,7 +3,7 @@
 class SnoopTranslator
 {
 
-    function snoopTranslate($input_phrase)
+    function shizzlenate($input_phrase)
     {
         $array_of_words = explode(" ", $input_phrase);
         $output = array();
@@ -17,15 +17,16 @@ class SnoopTranslator
             //else we will loop through the rest of the logic
             if ($word == "the") {
                 $output_word = "tha";
-            }  elseif ($word == "for") {
+            } elseif ($word == "for") {
                 $output_word = "fo'";
-            }  elseif ($word == "sure") {
+            } elseif ($word == "sure") {
                 $output_word = "shizzle";
+            } elseif ($word == "my") {
+                $output_word = "ma'";
             } elseif ($last_three_letters == "ing") {
                 // delete "g" and replace with "'"
                 $output_word = substr($word, 0, -1) . "'";
             } else {
-
 
                 $first_letter = substr($word, 0);
 

@@ -12,7 +12,7 @@
             $input = "homies";
 
             //Act
-            $result = $test_SnoopTranslator->snoopTranslate($input);
+            $result = $test_SnoopTranslator->shizzlenate($input);
 
             //Assert
             $this->assertEquals("homiez", $result);
@@ -25,7 +25,7 @@
             $input = "boys in cupboards";
 
             //Act
-            $result = $test_SnoopTranslator->snoopTranslate($input);
+            $result = $test_SnoopTranslator->shizzlenate($input);
 
             //Assert
             $this->assertEquals("boyz in cupboardz", $result);
@@ -39,7 +39,7 @@
             $input = "silhouette";
 
             //Act
-            $result = $test_SnoopTranslator->snoopTranslate($input);
+            $result = $test_SnoopTranslator->shizzlenate($input);
 
             //Assert
             $this->assertEquals("silhouette", $result);
@@ -52,7 +52,7 @@
             $input = "the";
 
             //Act
-            $result = $test_SnoopTranslator->snoopTranslate($input);
+            $result = $test_SnoopTranslator->shizzlenate($input);
 
             //Assert
             $this->assertEquals("tha", $result);
@@ -65,7 +65,7 @@
             $input = "for";
 
             //Act
-            $result = $test_SnoopTranslator->snoopTranslate($input);
+            $result = $test_SnoopTranslator->shizzlenate($input);
 
             //Assert
             $this->assertEquals("fo'", $result);
@@ -78,7 +78,7 @@
             $input = "sure";
 
             //Act
-            $result = $test_SnoopTranslator->snoopTranslate($input);
+            $result = $test_SnoopTranslator->shizzlenate($input);
 
             //Assert
             $this->assertEquals("shizzle", $result);
@@ -91,10 +91,23 @@
             $input = "popping";
 
             //Act
-            $result = $test_SnoopTranslator->snoopTranslate($input);
+            $result = $test_SnoopTranslator->shizzlenate($input);
 
             //Assert
             $this->assertEquals("poppin'", $result);
+        }
+
+        function test_snoopTranslate_myToMa()
+        {
+            //Arrange
+            $test_SnoopTranslator = new SnoopTranslator;
+            $input = "my";
+
+            //Act
+            $result = $test_SnoopTranslator->shizzlenate($input);
+
+            //Assert
+            $this->assertEquals("ma'", $result);
         }
     }
 
