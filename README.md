@@ -1,12 +1,12 @@
-# _{Tha Shizzlenator}_
+# _Tha Shizzlenator_
 
-##### _{Snoop Dogg phrase translator}, {08/10/2015}_
+##### _Snoop Dogg phrase translator, 08/10/2015_
 
-#### By _**{Ashlin Aronin and Mitch Rivet}**_
+#### By _**Ashlin Aronin and Mitch Rivet**_
 
 ## Description
 
-_{The Shizzlenator takes user inputted words and phrases and converts them to how Snoop Dogg would say them. Phrases and words are compared against the Snoop Dogg dictionary and Snoop Dogg grammatical rules.}_
+_The Shizzlenator takes user inputted words and phrases and converts them to how Snoop Dogg would say them. Phrases and words are compared against the Snoop Dogg dictionary and Snoop Dogg grammatical rules._
 
 ## Setup
 
@@ -19,11 +19,11 @@ _{The Shizzlenator takes user inputted words and phrases and converts them to ho
 
 ## Technologies Used
 
-_{HTML, CSS, Bootstrap, PHP, Silex, Twig, PHPUnit}_
+_HTML, CSS, Bootstrap, PHP, Silex, Twig, PHPUnit_
 
 ### Legal
 
-Copyright (c) 2015 **_{Ashlin Aronin, Mitch Rivet, Snoop Doggy Dogg aka Snoop Lion aka the DoggFather}_**
+Copyright (c) 2015 **_Ashlin Aronin, Mitch Rivet, Snoop Doggy Dogg aka Snoop Lion aka the DoggFather_**
 
 This software is licensed under the MIT license.
 
