@@ -16,7 +16,9 @@ class SnoopTranslator
             if ($word == "the") {
                 $output_word = "tha";
             }  elseif ($word == "for") {
-                $output_word = "fo'"; 
+                $output_word = "fo'";
+            }  elseif ($word == "sure") {
+                $output_word = "shizzle"; 
             }
                 else {
 

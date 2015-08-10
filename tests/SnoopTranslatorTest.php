@@ -68,7 +68,19 @@
             $result = $test_SnoopTranslator->snoopTranslate($input);
 
             //Assert
-            $this->assertEquals("fo'", $result); 
+            $this->assertEquals("fo'", $result);
+        }
+        function test_snoopTranslate_sureToShizzle()
+        {
+            //Arrange
+            $test_SnoopTranslator = new SnoopTranslator;
+            $input = "sure";
+
+            //Act
+            $result = $test_SnoopTranslator->snoopTranslate($input);
+
+            //Assert
+            $this->assertEquals("shizzle", $result); 
         }
     }
 
