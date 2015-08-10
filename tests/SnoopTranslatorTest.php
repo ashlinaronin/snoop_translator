@@ -31,4 +31,19 @@
             $this->assertEquals("boyz in the cupboardz", $result);
 
         }
+
+        function test_snoopTranslate_ignoreStartingS()
+        {
+            //Arrange
+            $test_SnoopTranslator = new SnoopTranslator;
+            $input = "silhouette";
+
+            //Act
+            $result = $test_SnoopTranslator->snoopTranslate($input);
+
+            //Assert
+            $this->assertEquals("silhouette", $result);
+        }
     }
+
+?>
